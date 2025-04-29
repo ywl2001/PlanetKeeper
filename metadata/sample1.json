@@ -1,0 +1,16 @@
+{
+    "name": "PlanetKeeper #1",
+    "description": "Awarded for your first carbon reduction record!",
+    "image": "https://ipfs.io/ipfs/your_image_cid",
+    "attributes": [
+      {
+        "trait_type": "CO2 Reduced",
+        "value": "1.2 kg"
+      },
+      {
+        "trait_type": "Level",
+        "value": "Beginner"
+      }
+    ]
+  }
+  
