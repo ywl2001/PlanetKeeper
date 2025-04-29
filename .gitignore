@@ -1,5 +1,7 @@
-node_modules
+node_modules/
 .env
+contract-address.json
+
 
 # Hardhat files
 /cache
@@ -15,3 +17,6 @@ node_modules
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/chain-31337
+
+# Logs
+*.log
