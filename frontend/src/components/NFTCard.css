@@ -1,0 +1,101 @@
+.card-container {
+    width: 300px;
+    height: 180px;
+    perspective: 1000px;
+    margin: 20px auto;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: sans-serif;
+    background-image: linear-gradient(135deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+                      linear-gradient(225deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+                      linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+                      linear-gradient(315deg, rgba(255,255,255,0.05) 25%, transparent 25%);
+    background-size: 30px 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+.nft-card {
+  width: 1000px;
+  height: 600px;
+  border-radius: 30px;
+  padding: 40px;
+  color: #fff;
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nft-card h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.nft-card p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* 響應式設計 */
+@media (max-width: 1200px) {
+  .nft-card {
+    width: 800px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nft-card {
+    width: 600px;
+    height: 360px;
+    padding: 30px;
+  }
+  
+  .nft-card h2 {
+    font-size: 1.5em;
+  }
+  
+  .nft-card p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 650px) {
+  .nft-card {
+    width: 90%;
+    height: auto;
+    min-height: 300px;
+    padding: 20px;
+  }
+}
+  
