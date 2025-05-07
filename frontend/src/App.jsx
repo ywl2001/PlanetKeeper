@@ -62,7 +62,7 @@ function App() {
           'Content-Type': 'application/json',
           'pinata_api_key': import.meta.env.VITE_PINATA_API_KEY,
           'pinata_secret_api_key': import.meta.env.VITE_PINATA_SECRET
-                },
+        },
         body: JSON.stringify(metadata)
       })
 
@@ -92,10 +92,10 @@ function App() {
     <div className="App">
       <h1>PlanetKeeper NFT</h1>
       {error && <div className="error-message">{error}</div>}
-      
+
       {walletAddress ? (
         <>
-          <p>Wallet Address: {walletAddress}</p>
+          <p className="wallet-address">Wallet Address: {walletAddress}</p>
           <div className="nft-container">
             {nftData && (
               <NFTCard
